@@ -25,9 +25,9 @@
 (defun sh_inordem(tree / )
 	(if (and (/= tree "esq") (/= tree "dir"))
 		(progn
-			(percorre (nth 0 tree))
+			(sh_inordem (nth 0 tree))
 			(print (nth 1 tree))
-			(percorre (nth 2 tree))
+			(sh_inordem (nth 2 tree))
 		)
 	)
 )
